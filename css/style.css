@@ -1,0 +1,1324 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts\OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url(fonts\OpenSans-Bold.woff);
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    min-width: 320px;
+    font-size: 10px;
+  }
+  
+    .header {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      background-image: url(../images/football_1920.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .header::before {
+      content: "";
+      position: absolute;
+      background-color: #0a0e34;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .header-content {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 1.3em;
+    }
+  
+    .header-logo {
+      width: 20rem;
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+  
+    .header-banner {
+      height: 100%;
+    }
+  
+     
+    .header-title-text {
+      display: flex;
+      flex-direction: column;
+      padding: 20rem 0 20rem;
+    }
+  
+    .title-text {
+      font-size: 8rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.4rem;
+    }
+  
+    .title-text:last-child {
+      text-align: right;
+    }
+  
+    .download-buttons {
+      position: relative;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15rem;
+      width: 70%;
+      justify-content: center;
+    }
+  
+    .icon-container {
+      width: 7rem;
+      height: 7rem;
+      padding-top: 1rem;
+      fill: white;
+    }
+  
+    .icon {
+      width: 5rem;
+    }
+  
+    .button {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-width: 30rem;
+      background-color: #51379b;
+      border-radius: 4rem;
+    }
+  
+    .button-google {
+      margin-left: 10rem;
+    }
+  
+    .heading {
+      position: relative;
+    }
+  
+    .feature-athlets-title:before {
+      content: "";
+      position: absolute;
+      width: 56rem;
+      margin-left: 15%;
+      height: 100%;
+      background-image: url(../images/footballer_566.png);
+      background-repeat: no-repeat;
+      background-position: 40%;
+      padding: 4rem;
+      z-index: 2;
+    }
+  
+    .feature-athlets-row , .feature-players-row {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .feature-athlets-row{
+      padding-left: 50%;
+      padding-right: 10%;
+    }
+
+    .feature-players-row{
+      padding-right: 50%;
+      padding-left: 10%;
+    }
+  
+   .feature-section-title {
+      margin-top: 9rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .row-title  {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      color: #c1c1c1;
+      font-weight: 800;
+      line-height: 3.6rem;
+      letter-spacing: 0.2rem;
+    }
+  
+    .feature-athlets-row .feature-players-row .row-description {
+      margin-top: 2rem;
+    }
+  
+    .text {
+      font-size: 2rem;
+      color: #000000;
+      font-weight: bold;
+    }
+  
+    .row-description-blue {
+      color: white;
+    }
+  
+    .heading {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #e7e7e7;
+      text-transform: uppercase;
+    }
+    
+    .num,
+    .num-third{
+      color: black;
+    }
+
+    .num,
+    .num-third,
+    .num-third-blue {
+      font-size: 20px;
+      font-weight: bold;
+      vertical-align: top;
+      line-height: 2.5rem;
+      margin-right: 0.5rem;
+      position: relative;
+    }
+  
+    .num-third-blue {
+      color: #9173e6;
+    }
+  
+    .num::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #5e42b0;
+      width: 100%;
+      left: 0;
+    }
+  
+    .num-third::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #ffffff;
+      width: 100%;
+      left: 0;
+    }
+  
+    .num-third-blue::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #ffffff;
+      width: 100%;
+      left: 0;
+    }
+  
+    .feature-players-title:before {
+      content: "";
+      position: absolute;
+      width: 100rem;
+      height: 100%;
+      background-image: url(../images/basketballer_991.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      z-index: 2;
+    }
+  
+    .white {
+      background-color: white;
+    }
+  
+    .gray {
+      background-color: #f5f6f7;
+    }
+  
+    .purple {
+      background-color: #5e42b0;
+    }
+  
+    .blue {
+      background-color: #0a0e34;
+    }
+  
+    .tips-section {
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+    }
+  
+    .tips-section:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+    
+    img{
+      display: block;
+    }
+
+    .tips-img {
+      width: 50%;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .card {
+      width: 50%;
+    }
+  
+    h2 {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #e7e7e7;
+      text-transform: uppercase;
+    }
+
+    .tip-title{
+      padding: 15%;
+      padding-bottom: 0;
+    }
+
+    .card-text {
+      padding-left: 15%;
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      color: #000000;
+      font-weight: 500;
+    }
+  
+  
+    .square {
+      width: 18rem;
+      height: 18rem;
+      background-color: #5e42b0;
+      position: absolute;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      top: 30%;
+      left: 50%;
+      margin-right: -9rem;
+    }
+  
+    .tip-number {
+      font-size: 3.5rem;
+      color: white;
+      position: relative;
+    }
+  
+    .tip-number::after {
+      content: "";
+      position: absolute;
+      bottom: 3.5rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #9173e6;
+      width: 80%;
+      left: 10%;
+    }
+  
+    .footer {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      background-image: url(../images/game_1920.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .footer::before {
+      content: "";
+      position: absolute;
+      background-color: #0a0e34;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .footer-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      z-index: 6;
+    }
+  
+    
+    .banner-title-content {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  
+    .footer-icon {
+      width: 12rem;
+      height: 11rem;
+      padding-top: 1.3rem;
+      padding-left: 1.3rem;
+      background: linear-gradient(#7554d5, #51379b);
+      border-radius: 3rem;
+    }
+  
+    .surface-footer {
+      width: 11rem;
+      fill: #ffffff;
+    }
+  
+    .banner-title-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20rem;
+      padding-bottom: 15rem;
+    }
+  
+    .footer-text{
+      padding-left: .5rem;
+    }
+
+    .subtitle-text {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #a496ca;
+    }
+
+    .title-text{
+      margin: 0;
+    }
+  
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+  
+    .app-store,
+    .google-play {
+      font-weight: bold;
+    }
+  
+    .footer-logo {
+      width: 20rem;
+      margin: auto;
+      padding-bottom: 2%;
+    }
+   
+  @media (max-width: 320px) , (min-width: 321px) and (max-width: 640px) {
+    .header {
+      background-image: url(../images/football_767.jpg);
+    }
+  
+    .header-content {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .header-logo {
+      width: 13rem;
+      padding: 2rem 0 0 0;
+    }
+  
+    .header-title-text {
+      padding: 7rem 0 7rem 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .title-text {
+      font-size: 2.7rem;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+  
+    .title-text:last-child {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      text-align: left;
+    }
+  
+    .download-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    .button {
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      min-width: 20rem;
+    }
+  
+    .button-google {
+      margin-top: 1.5rem;
+      margin-left: 0;
+    }
+  
+    .icon-container {
+      width: 3rem;
+      height: 3rem;
+      padding-top: 0;
+    }
+  
+    .icon {
+      width: 3rem;
+    }
+  
+    .link-text {
+      margin-left: 1rem;
+    }
+  
+    a {
+      font-size: 1rem;
+    }
+    
+    .feature-athlets-title::before {
+      background-image: url(../images/footballer_192.png);
+      background-position: center ;
+      width: 100%;
+      height: 45rem;
+      margin: 0;
+      padding: 0;
+      bottom: -40rem;
+    }
+    
+
+    .num,
+    .num-third,
+    .num-third-blue{
+      font-size: 1.5rem;
+      bottom: -.4rem;
+      
+    }
+
+    .num::after , .num-third::after ,  .num-third-blue::after {
+      height: 0.3rem;
+      width: 70%;
+      left: .2rem;
+      bottom: -.2rem;
+   }
+     
+    .feature-athlets-row:first-child ,  .feature-players-row:first-child  {
+      padding-top: 1rem;
+      padding-bottom: 27rem;
+    }
+    
+    .feature-athlets-row , .feature-players-row{
+      padding-left: 2.5rem;
+      padding-right: 2rem;
+    }
+    
+    .heading {
+      font-size: 5rem;
+      margin: auto;
+    }
+
+    .row-title{
+      font-size: 2.2rem;
+    }
+  
+    .feature-section-row:nth-child(2) {
+      margin-top: 25rem;
+      background-color: #fafafa;
+    }
+  
+    .feature-section-content {
+      width: 100%;
+    }
+  
+    .text {
+      font-size: 1.5rem;
+      font-weight: normal;
+      text-align: left;
+    }
+  
+    .gray {
+      background-color: #f5f4f9;
+    }
+  
+    .purple .text {
+      color: white;
+    }
+  
+    .feature-players-title::before {
+      background-image: url(../images/basketballer_302.png);
+      background-position: center;
+      width: 100%;
+      height: 45rem;
+      margin: 0;
+      padding: 0;
+      bottom: -40rem;
+    }
+  
+    .tips-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  
+    .tips-img {
+      width: 100%;
+    }
+  
+    .square {
+      width: 7rem;
+      height: 7rem;
+      margin-top: 5%;
+      top: 55%;
+      left: 6%;
+    }
+  
+    .tip-number {
+      font-size: 1.5rem;
+    }
+  
+    .tip-number::after {
+      bottom: 0.6rem;
+      width: 100%;
+      height: 0.4rem;
+      left: 0%;
+    }
+  
+    .card {
+      width: 100%;
+      margin: auto;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+
+    .tip-title , .card-text{
+      padding-left: 2.5rem;
+      padding-right: 2rem;
+    }
+  
+    .card-text {
+      font-size: 1.5rem;
+    }
+  
+    .footer {
+      background-image: url(../images/game_767.jpg);
+    }
+  
+    .banner-title-content {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 1.3rem;
+      box-sizing: border-box;
+    }
+   
+    .footer-icon {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 2rem;
+    }
+  
+    .surface-footer {
+      width: 6rem;
+    }
+  
+    .banner-title-text {
+      flex-direction: column;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      align-items: center;
+    }
+  
+    .subtitle-text {
+      font-size: 1.3rem;
+    }
+  
+    .title-text {
+      font-size: 3rem;
+    }
+  
+    .footer-logo {
+      width: 13rem;
+      margin-top: 30%;
+      padding: 0;
+   }
+  }
+  
+  
+  @media (min-width: 641px) and (max-width: 768px) , (min-width: 769px) and (max-width: 960px) {
+    .header {
+      width: 100%;
+      background-image: url(../images/football_767.jpg);
+    }
+  
+    .header-content {
+      padding: 0 5rem;
+      box-sizing: border-box;
+    }
+  
+    .header-logo {
+      width: 15rem;
+      padding-top: 5rem;
+    }
+  
+    .header-title-text {
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+    }
+  
+    .title-text {
+      font-size: 6.5rem;
+    }
+  
+    .title-text:last-child {
+      margin-left: 11rem;
+      text-align: left;
+    }
+  
+    .button-google {
+      margin-left: 5rem;
+    }
+  
+    .feature-athlets-title:before {
+      background-image: url(../images/footballer_497.png);
+      background-repeat: no-repeat;
+      height: 80rem;
+      width: 40rem;
+      margin: 0;
+      padding: 0;
+      left: -41rem;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .feature-athlets-row{
+      padding-left: 45%;
+      padding-right: 5%;
+    }
+
+    .feature-athlets-row:first-child{
+      padding: 0 0 0 45%;
+    }
+  
+    .row-title .title {
+      font-size: 3rem;
+    }
+  
+    .num,
+    .num-third,
+    .num-third-blue {
+      font-size: 1.8rem;
+    }
+  
+    .num::after,
+    .num-third::after,
+    .num-third-blue::after {
+      bottom: -0.2;
+    }
+  
+    .text {
+      font-size: 1.5rem;
+    }
+  
+    .feature-players-title:before {
+      background-image: url(../images/basketballer_436.png);
+      width: 100%;
+      height: 80rem;
+      margin: 0;
+      left: 40.3rem;
+    }
+  
+    .white:first-child {
+      padding-top: 1rem;
+    }
+  
+    .feature-players-row{
+      padding-left: 5%;
+      padding-right: 45%;
+    }
+
+    .tips-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  
+    .tips-img {
+      width: 100%;
+    }
+  
+    .square {
+      width: 7rem;
+      height: 7rem;
+      top: 30rem;
+      left: 2rem;
+    }
+  
+    .tip-number {
+      font-size: 1.5rem;
+    }
+  
+    .tip-number::after {
+      bottom: 0.6rem;
+      width: 100%;
+      height: 0.4rem;
+      left: 0%;
+    }
+  
+    .card {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .card-content {
+      width: 100%;
+      padding-left: 2rem;
+    }
+    
+    h2 {
+      font-size: 3rem;
+    }
+    
+    .tip-title , .card-text{
+      padding-top: 0;
+      padding-left: 5%;
+      padding-right: 0;
+    }
+
+    .card-text {
+      font-size: 1.5rem;
+    }
+  
+    .square {
+      width: 12rem;
+      height: 12rem;
+      top: 55%;
+      left: 6%;
+    }
+  
+    .tip-number {
+      font-size: 2.5rem;
+    }
+  
+    .tip-number::after {
+      bottom: 1.5rem;
+      width: 100%;
+      height: 0.5rem;
+      left: 0%;
+    }
+  
+    h2 {
+      font-size: 8rem;
+    }
+  
+    .card-text {
+      font-size: 2.5rem;
+    }
+  
+    .footer {
+      background-image: url(../images/game_767.jpg);
+    }
+  
+    .banner-title-content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .banner-title-text {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30%;
+      margin-bottom: 10%;
+      padding: 0;
+    }
+  
+    .footer-icon {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    .surface-footer {
+      width: 9rem;
+    }
+   
+    .footer-logo {
+      width: 15rem;
+      padding: 0;
+      margin-bottom: 2%;
+    }
+  }
+  
+  @media (min-width: 961px) and (max-width: 1920px){
+    .header {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      background-image: url(../images/football_1920.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .header::before {
+      content: "";
+      position: absolute;
+      background-color: #0a0e34;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .header-content {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 1.3em;
+    }
+  
+    .header-logo {
+      width: 20rem;
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+  
+    .header-banner {
+      height: 100%;
+    }
+  
+     
+    .header-title-text {
+      display: flex;
+      flex-direction: column;
+      padding: 20rem 0 20rem;
+    }
+  
+    .title-text {
+      font-size: 8rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.4rem;
+    }
+  
+    .title-text:last-child {
+      text-align: right;
+    }
+  
+    .download-buttons {
+      position: relative;
+      display: flex;
+      margin: auto;
+      margin-bottom: 15rem;
+      width: 70%;
+      justify-content: center;
+    }
+  
+    .icon-container {
+      width: 7rem;
+      height: 7rem;
+      padding-top: 1rem;
+      fill: white;
+    }
+  
+    .icon {
+      width: 5rem;
+    }
+  
+    .button {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-width: 30rem;
+      background-color: #51379b;
+      border-radius: 4rem;
+    }
+  
+    .button-google {
+      margin-left: 10rem;
+    }
+  
+    .heading {
+      position: relative;
+    }
+  
+    .feature-athlets-title:before {
+      content: "";
+      position: absolute;
+      width: 56rem;
+      margin-left: 15%;
+      height: 100rem;
+      background-image: url(../images/footballer_566.png);
+      background-repeat: no-repeat;
+      right: 100%;
+      top: -30%;
+      padding: 4rem;
+      z-index: 2;
+    }
+  
+    .feature-athlets-row , .feature-players-row {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .feature-athlets-row{
+      padding-left: 50%;
+      padding-right: 10%;
+    }
+
+    .feature-players-row{
+      padding-right: 50%;
+      padding-left: 10%;
+    }
+  
+   .feature-section-title {
+      margin-top: 9rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .row-title  {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      color: #c1c1c1;
+      font-weight: 800;
+      line-height: 3.6rem;
+      letter-spacing: 0.2rem;
+    }
+  
+    .feature-athlets-row .feature-players-row .row-description {
+      margin-top: 2rem;
+    }
+  
+    .text {
+      font-size: 2rem;
+      color: #000000;
+      font-weight: bold;
+    }
+  
+    .row-description-blue {
+      color: white;
+    }
+  
+    .heading {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #e7e7e7;
+      text-transform: uppercase;
+    }
+    
+    .num,
+    .num-third{
+      color: black;
+    }
+
+    .num,
+    .num-third,
+    .num-third-blue {
+      font-size: 20px;
+      font-weight: bold;
+      vertical-align: top;
+      line-height: 2.5rem;
+      margin-right: 0.5rem;
+      position: relative;
+    }
+  
+    .num-third-blue {
+      color: #9173e6;
+    }
+  
+    .num::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #5e42b0;
+      width: 100%;
+      left: 0;
+    }
+  
+    .num-third::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #ffffff;
+      width: 100%;
+      left: 0;
+    }
+  
+    .num-third-blue::after {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #ffffff;
+      width: 100%;
+      left: 0;
+    }
+    
+    .players-feature-section{
+      overflow: hidden;
+    }
+
+    .feature-players-title:before {
+      content: "";
+      position: absolute;
+      width: 100rem;
+      height: 70rem;
+      margin: 0;
+      padding: 10%;
+      background-image: url(../images/basketballer_991.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      left: 50%;
+      top: -70%;
+    }
+  
+    .white {
+      background-color: white;
+    }
+  
+    .gray {
+      background-color: #f5f6f7;
+    }
+  
+    .purple {
+      background-color: #5e42b0;
+    }
+  
+    .blue {
+      background-color: #0a0e34;
+    }
+  
+    .tips-section {
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+    }
+  
+    .tips-section:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+    
+    img{
+      display: block;
+    }
+
+    .tips-img {
+      width: 50%;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    .card {
+      width: 50%;
+    }
+  
+    h2 {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #e7e7e7;
+      text-transform: uppercase;
+    }
+
+    .tip-title{
+      padding: 20%;
+      padding-bottom: 0;
+    }
+
+    .card-text {
+      padding-left: 20%;
+      font-size: 2.2rem;
+      letter-spacing: 0.1rem;
+      color: #000000;
+      font-weight: 500;
+    }
+  
+  
+    .square {
+      width: 18rem;
+      height: 18rem;
+      background-color: #5e42b0;
+      position: absolute;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      top: 30%;
+      left: 46%;
+    }
+  
+    .tip-number {
+      font-size: 3.5rem;
+      color: white;
+      position: relative;
+    }
+  
+    .tip-number::after {
+      content: "";
+      position: absolute;
+      bottom: 3.5rem;
+      height: 0.6rem;
+      border-radius: 30px;
+      background: #9173e6;
+      width: 80%;
+      left: 10%;
+    }
+  
+    .footer {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      background-image: url(../images/game_1920.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .footer::before {
+      content: "";
+      position: absolute;
+      background-color: #0a0e34;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .footer-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      z-index: 6;
+    }
+  
+    
+    .banner-title-content {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin: 0px auto;
+  }
+  
+    .footer-icon {
+      width: 12rem;
+      height: 11rem;
+      padding-top: 1.3rem;
+      padding-left: 1.3rem;
+      background: linear-gradient(#7554d5, #51379b);
+      border-radius: 3rem;
+    }
+  
+    .surface-footer {
+      width: 11rem;
+      fill: #ffffff;
+    }
+  
+    .banner-title-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20rem;
+      padding-bottom: 15rem;
+    }
+  
+    .footer-text{
+      padding-left: .5rem;
+    }
+
+    .subtitle-text {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #a496ca;
+    }
+
+    .title-text{
+      margin: 0;
+    }
+  
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+  
+    .app-store,
+    .google-play {
+      font-weight: bold;
+    }
+  
+    .footer-logo {
+      width: 20rem;
+      margin: auto;
+      padding-bottom: 2%;
+    }
+  }
